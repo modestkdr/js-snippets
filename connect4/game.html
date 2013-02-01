@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connect 4</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+	<div id='container'>
+		<h1>Connect 4</h1>
+		<div id="game-board">
+			<ul id="one" key="1"></ul>
+			<ul id="two" key="2"></ul>
+			<ul id="three" key="3"></ul>
+			<ul id="four" key="4"></ul>
+			<ul id="five" key="5"></ul>
+			<ul id="six" key="6"></ul>
+			<ul id="seven" key="7"></ul>
+			<ul id="eight" key="8"></ul>
+	</div>
+	<div id="footer"><p>Click on any of the circles to start the game </p></div>
+
+	<!-- UNIT TESTS -->
+	<div id="tests">
+		<ul id="output"></ul>
+		<script>  
+		var output = document.getElementById('output');  
+		function assert( outcome, description ) {  
+		    var li = document.createElement('li');  
+		    li.className = outcome ? 'pass' : 'fail';  
+		    li.appendChild( document.createTextNode( description ) );  
+		    output.appendChild(li);  
+		};  
+		</script> 
+
+	</div>
+
+	<!-- Scripts -->
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+	<script src='script.js'></script>
+	<script src='unittests.js'></script>
+</body>
+</html>

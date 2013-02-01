@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+	<title>Check for a nested property on a object</title>
+</head>
+<body>
+	<h3>Check for a nested property on a object</h3>
+	<pre>
+		// Test case
+		 test = {level1:{level2:{level3:'level3'}} };
+		 
+		checkNested(test, 'level1', 'level2', 'level3'); // true
+		checkNested(test, 'level1'); // true
+		checkNested(test, 'level1', 'level4'); // false
+	</pre>
+	
+	<h4>Results for test case</h4>
+	<div id="result"></div>
+	<script src="script.js"></script>
+</body>
+</html>

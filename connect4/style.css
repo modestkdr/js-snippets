@@ -1,0 +1,73 @@
+body{ 
+	height:100%; 
+	color:#fff; 
+	background: #9B9B9B;
+}
+* { 
+	margin:0; 
+	padding:0; 
+}
+#container, #game-board {
+	margin: 0 auto;
+	width: 500px;
+}
+#container {
+	height:auto; 
+	min-height:100%; 
+}
+h1 {
+	color:#fff;
+	text-align: center;
+	font-family: "Helvetica Neue", Garamond, sans-serif;
+	margin: 10px;
+}
+#game-board {
+	padding: 10px;
+}
+	ul {
+		float: left;
+		padding-left: 10px;
+		background: #ebebeb;
+	}
+	li { 
+		border-radius: 50%;
+		list-style: none;
+		background: #ccc;
+		width: 50px;
+		height: 50px;
+		box-shadow: 1px 1px 1px #ccc;
+	}
+
+/* Colors for players */
+.red {
+	background: red;
+}
+.blue {
+	background: blue;
+}
+#footer {
+	clear: both;
+	padding: 10px;
+	margin: 20px 0;
+}
+
+/* unit tests */
+.pass:before {  
+            content: 'PASS: ';  
+            color:  blue;  
+            font-weight: bold;  
+        }  
+.fail:before {  
+    content: 'FAIL: ';  
+    color: red;  
+    font-weight: bold;  
+}  
+#output {
+	float: none;
+	color: #000;
+}
+	#output li {
+		width: auto;
+		border: none;
+		border-radius: 0;
+	}
